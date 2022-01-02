@@ -53,10 +53,6 @@ hr {
   opacity: 0.25;
 }
 
-#nav{
-  margin: 0px 165px;
-}
-
 hr:not([size]) {
   height: 1px;
 }
