@@ -1,0 +1,106 @@
+* { /* Configuração para zerar todas as configurações padrão da página */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body { /* Configuração para expesar a tela toda*/
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^="box-"] { /* Configuração das boxes*/
+    background-color: skyblue;
+
+    /* Colocar os elementos ao centro*/
+
+    display: grid;
+    place-items: center;
+}
+
+    /* ---------------- Área de Comentário ---------------- */
+    
+    /* Dividir os espaços entres as boxes
+    /* 1 valor da box + 2 o que resta 
+    grid-column: span 12;
+    grid-row: span 4; */
+
+    /* Posicionar 1 item(filho) dentro do container  
+    justify-self: center;
+    align-self: start; */
+
+
+.box-2{
+    background-color: springgreen;
+}
+
+.box-3{
+    background-color: salmon;
+}
+
+.box-4{
+    background-color: orchid;
+}
+
+.container { 
+    display: grid;
+    gap: 25px;    
+    height: 100vh;
+}    
+    /* ---------------- Área de Comentário ---------------- */
+
+    /* Definir o numero e larguras das colunas 
+        grid-template-columns: repeat(3, 1fr); */
+
+
+    /* Definir o numero e altura de cada linha 
+        grid-template-rows: 200px auto 100px;
+        grid-template-rows: repeat(3, 1fr); */
+
+
+    /* Isso é usado para especificar a quantidade de espaço que uma célula da grade deve carregar em termos de coluna e linha no contêiner
+        grid-template-areas: 
+        "A A A A   A A A A   A A C C"
+        "B B B B   B B B B   B B C C"
+        "B B B B   B B B B   B B C C";
+        .box-1 {
+            grid-area: A;   
+        }
+
+        .box-2 {
+            grid-area: B;
+        }
+        .box-3 {
+            grid-area: C;
+        } */
+
+
+    /* Coloca a lacuna/espaços entre as colunas e linhas entre o grid 
+        height: 100vh;
+        -- Colunas --
+        grid-template-columns: repeat(3, 1fr);
+        column-gab: 50px
+        -- Linhas --
+        grid-template-rows: 100px 100px 100px;
+        row-gap: 50px;*/
+
+
+    /* -------- Mover boxes e container's --------*/   
+
+    /* Cada caixa vai ter 200px por 200px 
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px; */
+
+    /* Posicionar itens(box/filhas) Eixo X dentro do container 
+    justify-items: end; (start/end/center/stretch) */ 
+
+    /* Posicionar itens(box/filhas) Eixo Y dentro do container 
+    align-items: center; (start/end/center/stretch) */
+
+    /* Posicionar container no Eixo X 
+    justify-content: center; (center/end/start/stretch/space-between/space-around/space-evenly) */
+
+    /* Posicionar container no Eixo Y
+    align-content: center; (center/end/start/stretch/space-between/space-around/space-evenly) */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../myicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            background-image: linear-gradient(45deg,#9E0D2C, #5E081A);
+            background-attachment: fixed;
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas  
+               cm, mm, in, px, pt, pc
+
+            
+               Medidas relativas 
+               em, ex, rem, vw, vh, %
+               16px geralmente = 1em
+               */
+            font-size: 1em;
+            /* lighter normal bold bolder */
+        }
+
+        h1{
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            /*font-family: Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /* shorthand 
+            - font-style --> font-weight --> font-size --> font-family */
+
+        }
+
+        main{
+            background-color: #CF405F;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            width: 600px;
+        }
+        h2{
+            text-align: center;
+            font: bolder 2em 'Work Sans';
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com fontes</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laborum culpa commodi iste alias debitis a voluptatibus quia nihil quibusdam atque voluptas, suscipit esse veniam sit enim laboriosam et unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque inventore, architecto, odit a quo excepturi ullam quidem voluptas esse rerum qui perspiciatis? Velit magnam neque dolor, quae adipisci accusamus at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates alias delectus. Mollitia enim magni quibusdam quas voluptatum voluptatem, commodi quasi alias totam minima, modi autem perspiciatis fugit eius repellat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, amet enim. Fugiat fuga quis commodi aliquid, reprehenderit id porro mollitia. Doloremque, voluptatem nam placeat commodi illum neque nesciunt numquam perspiciatis!</p>
+        <h2>Subtítulo do exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores, delectus aut maxime mollitia fuga ipsum quia nihil, ex rem odit dolorum temporibus aliquid cum distinctio eius laboriosam in sequi.</p>
+    </main>
+</body>
+</html>
