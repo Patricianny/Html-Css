@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Noto Serif", serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 1s;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.postimg.cc/YSL6cVNh/portrait-pensive-young-girl-making-notes.jpg");
+    background-size: 600px;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/* .card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.postimg.cc/YSL6cVNh/portrait-pensive-young-girl-making-notes.jpg");
+    background-size: 600px;
+    background-position: center;
+    border-radius: 5px;
+}
+*/
+
+.card:hover {
+    background-size: 770px;
+    background-position: left center;
+}
+
+.card span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 1.3em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px; /*Espaço entre as letras*/
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    backdrop-filter: blur(20px); /*Efeito*/
+    opacity: 0; /*Sumiu*/
+    transition: 0.5s;
+}
+
+.card:hover span {
+    opacity: 1;
+}
+
+.card .ico {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 0 20px  0 0;
+    opacity: 0;
+    transition: 1s;
+    backdrop-filter: blur(20px);
+}
+
+img {
+    width: 40px;
+}
+
+.card:hover .ico {
+    opacity: 1;
+}
+
+.card .ico li {
+    padding: 2px 4px;
+    margin-bottom: 4px;
+}
+
+.card .ico li a {
+    font-size: 1.3em;
+    color: white;
+}
+
+.card .ico li a {
+    transition: 0.4s;
+}
+
+.card .ico li a:hover {
+    transform: scale(1.4);
+}
+

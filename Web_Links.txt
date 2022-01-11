@@ -1,6 +1,5 @@
 =*=*=*=*=*=*=*=*=*=WEB=*=*=*=*=*=*=*=*=*
 
-https://fribly.com/2019/01/05/pure-css-gradient-menu/
 https://dev.to/joyshaheb/flexbox-cheat-sheets-in-2021-css-2021-3edl
 https://dev.to/alidevhash/css-card-hover-effects-html-css-33ml
 https://moodle.ifrs.edu.br/course/view.php?id=4993
